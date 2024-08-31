@@ -29,7 +29,7 @@ function Navbar() {
   return (
     <>
       <nav className="mx-[10vw] py-16 flex items-center  ">
-        <div class="logo text-3xl grow">RY.</div>
+        <div class="logo text-3xl grow">Ry.</div>
         <ul className=" flex gap-12 grow">
           <a href="#home" className="group transition duration-300 ">
             Home

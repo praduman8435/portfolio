@@ -6,16 +6,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
   font-family: "font1", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(15, 10, 10);
   color: rgb(255, 255, 255);
 }
 @font-face {
   font-family: font1;
   src: url('./fonts/TT Firs Neue Trial Medium.ttf');
 }
+body{
+  overflow: hidden;
+}
+
+
