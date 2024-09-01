@@ -12,7 +12,7 @@
 .btn-43 {
   border: 2px solid rgb(255, 255, 255);
   z-index: 1;
-  color: white;
+  /* color: rgb(204, 255, 0); */
 }
 
 .btn-43:after {
@@ -23,7 +23,7 @@
   top: 0;
   left: 0;
   z-index: -1;
-  background: rgb(255, 255, 255);
+  background: rgb(204, 255, 0);
   transition: all 0.5s ease;
 }
 
@@ -36,6 +36,17 @@
   bottom: 0;
   height: 100%;
 }
+.btn-43:active::after{
+  opacity: 0.3;
+}
 a{
   cursor: pointer;
 }
+.me{
+  z-index: -4;
+  background: url('./components/me.png') no-repeat center center/cover;
+}
+.dot{
+  @apply mx-12
+}
+
