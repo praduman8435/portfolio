@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Mover from "./Mover";
+
 function Hero() {
   const [time, setTime] = useState(new Date());
   useEffect(() => {
@@ -17,17 +19,27 @@ function Hero() {
   };
   const getMonthName = (date) => {
     const months = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
     ];
     return months[date.getMonth()]; // Month starts from 0
   };
 
   return (
     <div className="" id="home">
-      <div className="mx-[10vw] my-36 flex">
+      <div className="mx-[10vw] my-36 flex relative">
         <div className="grow">
-          <h1 className=" font-black text-[8vw]">Ravi Yadav</h1>
+          <h1 className=" font-black text-[8vw] z-10">Ravi Yadav</h1>
           <p className="text-xl opacity-50 w-[50%] lg:my-[-35px] md:my-0 ">
             Full Stack Web Developer & UI designer | Crafting Seamless Digital
             Experiences
@@ -36,12 +48,17 @@ function Hero() {
             Crafting Digital Experiences with Precision and Passion.
           </p> */}
         </div>
+        <div className="w-[484px] h-[660px] absolute left-[50%] bottom-[-28%] me backdrop-contrast-200 ` "></div>
         <div className="">
           <p className=" text-right w-44">
             Currently available for freelance projects
           </p>
-          <p className="mt-40 text-right w-44">Based in <br /> India</p>
-          <p className="mt-40 text-right w-44">{formatTime(time)} <br /> <span>{time.getFullYear()}</span> </p>
+          <p className="mt-40 text-right w-44">
+            Based in <br /> India
+          </p>
+          <p className="mt-40 text-right w-44">
+            {formatTime(time)} <br /> <span>{time.getFullYear()}</span>{" "}
+          </p>
         </div>
       </div>
     </div>

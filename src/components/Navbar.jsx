@@ -1,8 +1,6 @@
-import React from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-
+import React, { useEffect }  from "react";
 function Navbar() {
+
 
   // useGSAP( () => {
   //   gsap.from(".logo", {
@@ -28,9 +26,9 @@ function Navbar() {
 
   return (
     <>
-      <nav className="mx-[10vw] py-16 flex items-center  ">
-        <div class="logo text-3xl grow">Ry.</div>
-        <ul className=" flex gap-12 grow">
+      <nav className="mx-[10vw] py-16 flex items-center  " >
+        <div class="logo text-3xl grow text-yellow-300">Ry.</div>
+        <ul className=" flex gap-12 grow ">
           <a href="#home" className="group transition duration-300 ">
             Home
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
@@ -52,7 +50,10 @@ function Navbar() {
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
         </ul>
-        <a class="btn41-43 btn-43">Get in Touch</a>
+        <div data-cursor-stick='#stick-me'>
+
+        <button id="stick-me"  class="btn41-43 btn-43">Get in Touch</button>
+        </div>
       </nav>
     </>
   );
