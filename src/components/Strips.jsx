@@ -5,9 +5,9 @@ function Strips() {
 
 
   return (
-    <div>
+    <div className="mb-[30vw]">
       <div className="">
-        <div className="opacity-30 absolute origin-center -rotate-[4deg] w-[110%] -left-4 ">
+        <div className="opacity-30 overflow-hidden absolute origin-center -rotate-[4deg] w-[110%] -left-4 ">
           <Mover
           className="strip1"
             item1={" UI/UX Design"}
@@ -15,7 +15,7 @@ function Strips() {
             item3={" Full Stack"}
           />
         </div>
-        <div className="origin-center opacity-90 absolute -left-4 rotate-[6deg] w-[110%]">
+        <div className="origin-center overflow-clip  absolute -left-4 rotate-[6deg] w-[110%]">
           <Mover
             item3={" UI/UX Design"}
             item1={" Creative Developer"}
