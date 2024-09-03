@@ -48,7 +48,7 @@ function Hero() {
             Crafting Digital Experiences with Precision and Passion.
           </p> */}
         </div>
-        <div className="w-[484px] h-[660px] absolute left-[50%] bottom-[-28%] me backdrop-contrast-200 ` "></div>
+        <div className="w-[684px] h-[860px] absolute left-[50%] bottom-[-30%]` "></div>
         <div className="">
           <p className=" text-right w-44">
             Currently available for freelance projects
