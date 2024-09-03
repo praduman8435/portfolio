@@ -3,17 +3,19 @@ import Strips from "./Strips";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Loader from "./Loader";
-
+import Intro from "./Intro";
+import String from "./String";
 function Layout() {
   return (
-    <div id="layout" className="overflow-y-hidden h-screen">
+    <div id="layout" className="overflow-hidden h-screen">
       <Loader />
       <div className="relative">
         <Navbar />
         <Hero />
         <Strips />
-        <h1 className=" h-screen text-9xl"></h1>
       </div>
+        <Intro />
+        <String />
     </div>
   );
 }
