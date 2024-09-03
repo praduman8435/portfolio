@@ -26,14 +26,14 @@ function Navbar() {
 
   return (
     <>
-      <nav className="mx-[10vw] py-16 flex items-center  " >
-        <div class="logo text-3xl grow text-yellow-300">Ry.</div>
+      <nav className="mx-[10vw] py-16 flex items-center z-[999] " >
+        <div className="logo text-3xl grow y">Ry.</div>
         <ul className=" flex gap-12 grow ">
           <a href="#home" className="group transition duration-300 ">
             Home
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
-          <a className="group transition duration-300">
+          <a href="#about" className="group transition duration-300">
             About
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
@@ -45,10 +45,10 @@ function Navbar() {
             Projects
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
-          <a className="group transition duration-300">
+          {/* <a className="group transition duration-300">
             Contact
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
-          </a>
+          </a> */}
         </ul>
         <div data-cursor-stick='#stick-me'>
 
