@@ -28,7 +28,7 @@
 }
 
 .btn-43:hover {
-  color: rgb(15, 10, 10);
+  color: #111;
 }
 
 .btn-43:hover:after {
@@ -48,4 +48,7 @@ a{
 }
 .dot{
   @apply mx-12
+}
+.y{
+  color: #c3ff00
 }
