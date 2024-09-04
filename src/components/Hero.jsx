@@ -15,7 +15,7 @@ function Hero() {
     const hours = String(date.getHours()).padStart(2, "0");
     const minutes = String(date.getMinutes()).padStart(2, "0");
     const seconds = String(date.getSeconds()).padStart(2, "0");
-    return `${hours}:${minutes}:${seconds}`;
+    return `${hours}:${minutes}`;
   };
   const getMonthName = (date) => {
     const months = [
@@ -37,10 +37,10 @@ function Hero() {
 
   return (
     <div className="" id="home">
-      <div className="mx-[10vw] my-36 flex relative">
+      <div className="mx-[5vw] md:mx-[10vw] md:my-36 my-[18vw] md:flex relative">
         <div className="grow">
-          <h1 className=" font-black text-[8vw] z-10">Ravi Yadav</h1>
-          <p className="text-xl opacity-50 w-[50%] lg:my-[-35px] md:my-0 ">
+          <h1 className=" font-black text-6xl md:text-[8vw] z-10">Ravi Yadav</h1>
+          <p className="md:text-xl opacity-50 w-[80%] md:w-[70%] lg:w-[50%]  ">
             Full Stack Web Developer & UI designer | Crafting Seamless Digital
             Experiences
           </p>
@@ -48,15 +48,14 @@ function Hero() {
             Crafting Digital Experiences with Precision and Passion.
           </p> */}
         </div>
-        <div className="w-[684px] h-[860px] absolute left-[50%] bottom-[-30%]` "></div>
-        <div className="">
-          <p className=" text-right w-44">
+        <div className="flex md:inline gap-[15vw] text-sm mt-20 md:mt-0 ">
+          <p className="md:text-right md:w-44">
+            Based in  India
+          </p>
+          <p className="md:mt-40 md:text-right md:w-44">
             Currently available for freelance projects
           </p>
-          <p className="mt-40 text-right w-44">
-            Based in <br /> India
-          </p>
-          <p className="mt-40 text-right w-44">
+          <p className="md:mt-40 md:text-right md:w-44">
             {formatTime(time)} <br /> <span>{time.getFullYear()}</span>{" "}
           </p>
         </div>

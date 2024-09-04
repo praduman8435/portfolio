@@ -26,9 +26,9 @@ function Navbar() {
 
   return (
     <>
-      <nav className="mx-[10vw] py-16 flex items-center z-[999] " >
-        <div className="logo text-3xl grow y">Ry.</div>
-        <ul className=" flex gap-12 grow ">
+      <nav className="mx-[5vw] md:mx-[10vw]  py-16 flex items-center z-[999] " >
+        <div className="logo text-3xl grow ">Tx.</div>
+        <ul className="gap-12 grow hidden md:flex lg:flex ">
           <a href="#home" className="group transition duration-300 ">
             Home
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
@@ -52,7 +52,7 @@ function Navbar() {
         </ul>
         <div data-cursor-stick='#stick-me'>
 
-        <button id="stick-me"  class="btn41-43 btn-43">Get in Touch</button>
+        <button id="stick-me"  class="  hidden md:block lg:block btn41-43 btn-43">Get in Touch</button>
         </div>
       </nav>
     </>
