@@ -1,11 +1,12 @@
 import React from "react";
 import Mover from "./Mover";
-
+import Marquee from "react-fast-marquee";
 function Strips() {
 
 
   return (
-    <div className="mb-[30vw]">
+    <>
+    <div className="my-[30vw] md:mb-[30vw] md:mt-0">
       <div className="">
         <div className="opacity-30 overflow-hidden absolute origin-center -rotate-[4deg] w-[110%] -left-4 ">
           <Mover
@@ -24,6 +25,10 @@ function Strips() {
         </div>
       </div>
     </div>
+    <div>
+      
+    </div>
+    </>
   );
 }
 

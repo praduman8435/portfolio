@@ -44,8 +44,8 @@ function Loader() {
         scrollTrigger: {
           toggleActions: "play none none none",
           trigger: ".strip",
-          start: "50% 100%",
-          end: "300% 100% ",
+          start: "50vw 100%",
+          end: "300% top ",
           scrub: true,
           // markers: true,
         },
