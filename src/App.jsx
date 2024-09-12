@@ -6,6 +6,7 @@ import { ReactLenis, useLenis } from "lenis/react";
 import Layout from "./components/Layout";
 function App() {
   const lenis = useLenis(({ scroll }) => {
+    duration: 2.5;
     // called every scroll
   });
   MouseFollower.registerGSAP(gsap);
@@ -20,8 +21,9 @@ function App() {
 
   return (
     <>
-      <ReactLenis root className="lenisroot">
+      <ReactLenis root  className="lenisroot">
         <Layout />
+        
       </ReactLenis>
     </>
   );
