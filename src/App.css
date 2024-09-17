@@ -46,9 +46,7 @@ a{
   z-index: -4;
   background: url('./components/me.png') no-repeat center center/cover;
 }
-.dot{
-  @apply mx-12
-}
+
 .y{
   color: #c3ff00
 }

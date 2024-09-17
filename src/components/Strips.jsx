@@ -1,6 +1,5 @@
 import React from "react";
 import Mover from "./Mover";
-import Marquee from "react-fast-marquee";
 function Strips() {
 
 
