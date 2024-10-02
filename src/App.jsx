@@ -4,6 +4,7 @@ import MouseFollower from "mouse-follower";
 import gsap from "gsap";
 import { ReactLenis, useLenis } from "lenis/react";
 import Layout from "./components/Layout";
+import Hover from "./components/Hover";
 function App() {
   const lenis = useLenis(({ scroll }) => {
     duration: 2.5;
@@ -22,8 +23,7 @@ function App() {
   return (
     <>
       <ReactLenis root  className="lenisroot">
-        <Layout />
-        
+        <Layout />        
       </ReactLenis>
     </>
   );

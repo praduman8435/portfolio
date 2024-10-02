@@ -25,7 +25,7 @@ function String() {
       const rect = ref.current.getBoundingClientRect();
       const x = e.clientX - rect.left; // Calculate x relative to the element
       const y = e.clientY - rect.top;  // Calculate y relative to the element
-      const newPath = `M 50 50 Q ${x} ${y} 950 50`;
+      const newPath = `M 50 50 Q ${x>1000 ? x/2 : x} ${y} 950 50`;
       setPath(newPath);
     }
   };

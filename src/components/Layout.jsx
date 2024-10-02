@@ -5,6 +5,11 @@ import Hero from "./Hero";
 import Loader from "./Loader";
 import Intro from "./Intro";
 import String from "./String";
+import Blogs from "./Blogs";
+import Contact from "./Contact";
+import Projects from "./Projects";
+import Footer from "./Footer";
+import Tools from "./Tools";
 
 function Layout() {
   return (
@@ -23,20 +28,11 @@ function Layout() {
       </div>
       <Intro />
       <String />
-      <div className="">
-        <div class="group relative bg-red-100 text-8xl font-black">
-          <h1 class="duration-150 group-hover:opacity-0">Hello</h1>
-          <div class="absolute top-0 flex h-full w-full scale-y-0 items-center justify-center bg-red-500 text-4xl font-black duration-500 ease-in-out group-hover:scale-y-100">
-            <marquee
-              speed="2"
-              class="opacity-0 duration-500 group-hover:text-white group-hover:opacity-100"
-            >
-              Hello <span class="mx-10"></span>
-              Hello
-            </marquee>
-          </div>
-        </div>
-      </div>
+      <Tools/>
+      <Blogs/>
+      <Projects/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

@@ -14,7 +14,7 @@ const Intro = () => {
         end: "70% 80% ",
         scrub: true,
 
-        // markers: true,
+        // markers: true, 
       },
     });
     t1.from([".about1, .about2, .about3, .about4, .about5"], {
