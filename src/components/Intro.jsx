@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AnimatedText from "./AnimatedText";
-const Intro = () => {  
+const Intro = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
     const t1 = gsap.timeline({
@@ -14,7 +14,7 @@ const Intro = () => {
         end: "70% 80% ",
         scrub: true,
 
-        // markers: true, 
+        // markers: true,
       },
     });
     t1.from([".about1, .about2, .about3, .about4, .about5"], {
@@ -46,24 +46,26 @@ const Intro = () => {
 
         <div className="flex items-center para md:flex-row  ">
           <div className="text-2xl md:text-[3vw] leading-none para ">
-          <AnimatedText text={`With a blend of technical expertise and design sensibility, I bring
+            <AnimatedText
+              text={`With a blend of technical expertise and design sensibility, I bring
             a unique approach to building and designing web applications that
-            not only function flawlessly but also captivate users.`} id={3} />
+            not only function flawlessly but also captivate users.`}
+              id={3}
+            />
           </div>
         </div>
         <div className="leading-5 tracking-wide flex my-10 overflow-hidden ">
           <p className="w-1/2"></p>
-          <p className="w-1/2 text-right md:text-xl">
-          <AnimatedText text={`With a blend of technical expertise and design sensibility, I bring
-            a unique approach to building and designing web applications that
-            not only function flawlessly but also captivate users.`} id={1} />
+          <p className="md:w-1/2 w-100 text-right md:text-xl">
+            <AnimatedText
+              text={`Whether I’m designing intuitive interfaces or crafting robust server-side logic, I thrive on challenges that push my creativity and technical skills. Explore my projects below to see how I can help bring your vision to life!`}
+              id={1}
+            />
           </p>
         </div>
       </div>
-      
     </>
   );
 };
 
 export default Intro;
-
