@@ -29,7 +29,8 @@ function Layout() {
       <Intro />
       <String />
       <Tools/>
-      <Blogs/>
+      {/* <Blogs/> */}
+      
       <Projects/>
       <Contact/>
       <Footer/>
