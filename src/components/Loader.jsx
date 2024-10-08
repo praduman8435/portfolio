@@ -22,7 +22,7 @@ function Loader() {
         duration: 1,
         // opacity: 0,
         y: "-100%",
-        // delay: 0.5,
+        delay: 0.5,
         stagger: 0.5,
       })
       // .to("#intro-slider", {
