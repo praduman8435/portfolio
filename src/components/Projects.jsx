@@ -1,14 +1,62 @@
-import React from 'react'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
+  useGSAP(() => {
+    const timeline = gsap.timeline({
+      defaults: {
+        ease: "none",
+      },
+      scrollTrigger: {
+        trigger: "#container",
+        pin: true,
+        start: "top",
+        end: "bottom",
+        scrub: 1,
+        markers: true,
+      },
+    });
+
+    // const circles = gsap.utils.toArray("section.circle");
+    // circles.forEach((circle) => {
+    //   timeline.from(circle, {
+    //     clipPath: "circle(0% at 50% 50%)",
+    //     stagger: 1,
+    //   });
+    // });
+
+    timeline.from("section", {
+      clipPath: "circle(0% at 50% 50%)",
+      stagger: 1,
+    });
+  });
+
   return (
-    <div className='w-screen h-screen bg-zinc-500'>Projects
-    <div className=' bg-zinc-300 mx-[5vw] md:mx-[10vw] md:my-36 my-[18vw] md:flex relative'>
-        <h1 className='text-[10vw]'>Projects</h1>
-        {/* <Hover>hello</Hover>  */}
+    <div className="w-screen relative " id="container">
+      <div className="flex justify-center items-center h-screen">
+        <h1 className="text-[10vw] y ">Projects</h1>
+        <section className="">
+          <div className="h-screen w-full bg-black text-9xl">
+            Project 1 
+          </div>
+        </section>
+        <section className="">
+          <div className="h-screen w-full bg-zinc-500 text-9xl
+          ">
+            Prject 2
+          </div>
+        </section>
+        <section className="">
+          <div className="h-screen w-full bg-violet-500 text-yellow-400 text-9xl">Project 3 </div>
+          
+        </section>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

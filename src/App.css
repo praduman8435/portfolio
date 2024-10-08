@@ -65,3 +65,9 @@ a{
   width: 100%;
   z-index: 2;
 }
+
+section {
+  clip-path: circle(100% at 50% 50%);
+  width: 100%;
+  position: absolute;
+}
