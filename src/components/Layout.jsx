@@ -8,7 +8,7 @@ import String from "./String";
 import Blogs from "./Blogs";
 import Contact from "./Contact";
 import Projects from "./Projects";
-import Footer from "./Footer";
+import Education from "./Education";
 import Tools from "./Tools";
 
 function Layout() {
@@ -33,7 +33,7 @@ function Layout() {
       
       <Projects/>
       <Contact/>
-      <Footer/>
+      <Education/>
     </div>
   );
 }

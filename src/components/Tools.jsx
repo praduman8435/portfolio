@@ -26,7 +26,7 @@ function Tools() {
       //   delay: 0.4,
       scrub: "true",
       translateX: "120",
-      stagger: 0.2,
+      // stagger: 0.2,
       ease: "power1.Out",
     });
   });
@@ -53,15 +53,13 @@ function Tools() {
       </div>
       <div className="my-4 md:flex md:gap-8 flex gap-5  flex-col ">
         {/* <div className="text-2xl md:text-[3vw] mb-2">Javascript </div> */}
-        <Hover front="JavaScript;">
-          Adding interactivity and enhancing user experience.
-        </Hover>
-        <Hover front="<React.js/>">Crafting dynamic user experiences</Hover>
-        <Hover front="/Node.js">Building server-side applications.</Hover>
-        <Hover front="Express.js">Creating robust APIs.</Hover>
-        <Hover front="MongoDB">
-          Designing aesthetically pleasing interfaces.
-        </Hover>
+        <Hover front='HTML | CSS | Tailwind CSS | Styled Components | React '>FrontEnd </Hover>
+        <Hover front='Node.js | Express.js | MongoDB | MySQL | PostgreSQL'>BackEnd</Hover>
+        <Hover front='Docker | Kubernetes | CI/CD | Jenkins | AWS | Azure'>DevOps</Hover>
+        <Hover front='Git | GitHub'> Version Control </Hover>
+        <Hover front='Figma | Canva '>UI/UX</Hover>
+
+
       </div>
     </div>
   );
