@@ -5,11 +5,10 @@ import Hero from "./Hero";
 import Loader from "./Loader";
 import Intro from "./Intro";
 import String from "./String";
-import Blogs from "./Blogs";
-import Contact from "./Contact";
 import Projects from "./Projects";
-import Footer from "./Footer";
+import Education from "./Education";
 import Tools from "./Tools";
+import Social from "./Socials";
 
 function Layout() {
   return (
@@ -28,12 +27,10 @@ function Layout() {
       </div>
       <Intro />
       <String />
-      <Tools/>
-      {/* <Blogs/> */}
-      
-      <Projects/>
-      <Contact/>
-      <Footer/>
+      <Tools />
+      <Projects />
+      <Social />
+      {/* <Education/> */}
     </div>
   );
 }
