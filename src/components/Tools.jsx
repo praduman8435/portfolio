@@ -35,16 +35,19 @@ function Tools() {
       <div className="flex flex-col ">
         <div className="mb-10 tool h-[11vw] overflow-hidden flex bf ">
           <div className="z-2 overflow-hidden">
-            <span className="text-[10vw] inline-block y tool1 z-1">T</span>
+            <span className="text-[10vw] inline-block y tool1 z-1">S</span>
           </div>
           <div className="z-2 overflow-hidden">
-            <span className="text-[10vw] inline-block y tool2 ">o</span>
+            <span className="text-[10vw] inline-block y tool2 ">k</span>
           </div>
           <div className="z-2 overflow-hidden">
-            <span className="text-[10vw] inline-block y tool3 ">o</span>
+            <span className="text-[10vw] inline-block y tool3 ">i</span>
           </div>
           <div className="z-2 overflow-hidden">
             <span className="text-[10vw] inline-block y tool4 ">l</span>
+          </div>
+          <div className="z-2 overflow-hidden">
+            <span className="text-[10vw] inline-block y tool5 ">l</span>
           </div>
           <div className="z-2 overflow-hidden">
             <span className="text-[10vw] inline-block y tool5 ">s</span>
@@ -53,9 +56,9 @@ function Tools() {
       </div>
       <div className="my-4 md:flex md:gap-8 flex gap-5  flex-col ">
         {/* <div className="text-2xl md:text-[3vw] mb-2">Javascript </div> */}
-        <Hover front='HTML | CSS | Tailwind CSS | Styled Components | React '>FrontEnd </Hover>
+        <Hover front=' React | JavaScript | HTML | CSS | Tailwind CSS | Styled Components'>FrontEnd </Hover>
         <Hover front='Node.js | Express.js | MongoDB | MySQL | PostgreSQL'>BackEnd</Hover>
-        <Hover front='Docker | Kubernetes | CI/CD | Jenkins | AWS | Azure'>DevOps</Hover>
+        <Hover front='Docker | Kubernetes | CI/CD | AWS '>DevOps</Hover>
         <Hover front='Git | GitHub'> Version Control </Hover>
         <Hover front='Figma | Canva '>UI/UX</Hover>
 
