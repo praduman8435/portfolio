@@ -1,7 +1,7 @@
 # Ravi Yadav - Portfolio
 
 Welcome to the repository for my personal portfolio website! 🎨🚀  
-[Check it out here!](https://google.com)
+[Check it out here!](https://thexro.vercel.app/)
 
 This website is my first attempt at creating a sleek, modern portfolio with smooth animations, built using **GSAP (GreenSock Animation Platform)** and various **npm packages**. My goal was to create something visually striking, fast, and responsive.
 
