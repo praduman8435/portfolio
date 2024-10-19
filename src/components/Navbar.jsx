@@ -3,7 +3,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="mx-[5vw] md:mx-[10vw]  py-16 flex items-center z-[999] " >
+      <nav className="mx-[5vw] md:mx-[10vw]  py-16 flex items-center z-[999] nav " >
         <div className="logo text-3xl grow ">Tx.</div>
         <ul className="gap-12 grow hidden md:flex lg:flex ">
           <a href="#home" className="group transition duration-300 ">

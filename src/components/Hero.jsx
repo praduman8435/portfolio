@@ -1,7 +1,38 @@
+import { gsap } from "gsap";
 import React, { useEffect, useState } from "react";
 import Mover from "./Mover";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Hero() {
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#home",
+        start: "10% 25%",
+        end: "bottom 10%",
+        scrub: 1,
+        // markers: true,
+      },
+    });
+    tl.to([".name", ".underdog"], {
+      y: 200,
+      duration: .5,
+    });
+    if (window.matchMedia("(min-width: 768px)").matches) { // Change 768px to your breakpoint
+      tl.to([".side"], {
+        x: 150, // Translate along x-axis
+        duration: .5,
+      });
+    } else {
+      tl.to([".side"], {
+        y: 50, // Translate along y-axis
+        duration: 1,
+      });
+    }
+  }, []);
+
   const [time, setTime] = useState(new Date());
   useEffect(() => {
     const updateTime = () => {
@@ -39,25 +70,33 @@ function Hero() {
     <div className="" id="home">
       <div className="mx-[5vw] md:mx-[10vw] md:my-36 my-[18vw] md:flex relative">
         <div className="grow">
-          <h1 className=" font-black text-6xl md:text-[8vw] z-10">Ravi Yadav</h1>
-          <p className="md:text-xl opacity-50 w-[80%] md:w-[70%] lg:w-[50%]  ">
-            Full Stack Web Developer & UI designer | Crafting Seamless Digital
-            Experiences
+          <div className=" font-black text-6xl md:text-[8vw] overflow-hidden">
+            <div className="name">Ravi Yadav</div>
+          </div>
+          <p className="md:text-xl opacity-50 w-[80%] md:w-[70%] lg:w-[50%] overflow-hidden ">
+            <div className="underdog">
+              <div className="inline">
+                Full Stack Web Developer & UI designer
+              </div>
+              <div className="inline">
+                | Crafting Seamless Digital Experiences
+              </div>
+            </div>
           </p>
           {/* <p className="text-xl my-12 opacity-50 w-[50]">
             Crafting Digital Experiences with Precision and Passion.
           </p> */}
         </div>
-        <div className="flex md:inline gap-[15vw] text-sm mt-20 md:mt-0 ">
-          <p className="md:text-right md:w-44">
-            Based in  India
-          </p>
-          <p className="md:mt-40 md:text-right md:w-44">
-            Currently available for freelance projects
-          </p>
-          <p className="md:mt-40 md:text-right md:w-44">
-            {formatTime(time)} <br /> <span>{time.getFullYear()}</span>{" "}
-          </p>
+        <div className="text-sm mt-20 md:mt-0 overflow-hidden">
+          <div className="flex md:inline-block gap-[15vw] side">
+            <p className="md:text-right md:w-44">Based in India</p>
+            <p className="md:mt-40 md:text-right md:w-44">
+              Currently available for freelance projects
+            </p>
+            <p className="md:mt-40 md:text-right md:w-44">
+              {formatTime(time)} <br /> <span>{time.getFullYear()}</span>{" "}
+            </p>
+          </div>
         </div>
       </div>
     </div>
