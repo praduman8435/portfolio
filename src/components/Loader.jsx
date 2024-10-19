@@ -2,9 +2,9 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 function Loader() {
   useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
     const t1 = gsap.timeline();
     t1.to("#layout", {
       duration: 0.1,

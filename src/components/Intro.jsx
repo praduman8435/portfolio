@@ -3,9 +3,9 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AnimatedText from "./AnimatedText";
+gsap.registerPlugin(ScrollTrigger);
 const Intro = () => {
   useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
     const t1 = gsap.timeline({
       scrollTrigger: {
         toggleActions: "play none none none",
@@ -56,12 +56,12 @@ const Intro = () => {
         </div>
         <div className="leading-5 tracking-wide flex my-10 overflow-hidden ">
           <p className="w-1/2"></p>
-          <p className="md:w-1/2 w-100 text-right md:text-xl">
+          <div className="md:w-1/2 w-100 text-right md:text-xl">
             <AnimatedText
               text={`Whether I’m designing intuitive interfaces or crafting robust server-side logic, I thrive on challenges that push my creativity and technical skills. Explore my projects below to see how I can help bring your vision to life!`}
               id={1}
             />
-          </p>
+          </div>
         </div>
       </div>
     </>
