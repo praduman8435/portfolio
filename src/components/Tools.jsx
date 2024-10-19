@@ -6,10 +6,36 @@ import { useGSAP } from "@gsap/react";
 
 import Hover from "./Hover";
 
+const letters = ['T', 'o', 'o', 'l', 's'];
+
+const skills = {
+  frontEnd: {
+    front: "React | JavaScript | HTML | CSS | Tailwind CSS | Styled Components",
+    title: "FrontEnd",
+  },
+  backEnd: {
+    front: "Node.js | Express.js | MongoDB | MySQL | PostgreSQL",
+    title: "BackEnd",
+  },
+  devOps: {
+    front: "Docker | Kubernetes | CI/CD | AWS",
+    title: "DevOps",
+  },
+  versionControl: {
+    front: "Git | GitHub",
+    title: "Version Control",
+  },
+  uiUx: {
+    front: "Figma | Canva",
+    title: "UI/UX",
+  },
+};
+
 function Tools() {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
-    const t1 = gsap.timeline({
+    const t1 = gsap.timeline({});
+    t1.from([".tool"], {
       scrollTrigger: {
         toggleActions: "play none none none",
         trigger: ".tool",
@@ -19,50 +45,51 @@ function Tools() {
 
         // markers: true,
       },
-    });
-    t1.from([".tool1, .tool2, .tool3, .tool4, .tool5"], {
       duration: 1,
       //   opacity: 0,
-      //   delay: 0.4,
+      // delay: 0.4,
       scrub: "true",
       translateX: "120",
       // stagger: 0.2,
+      ease: "power1.Out",
+    }).from([".skill"], {
+      scrollTrigger: {
+        // once: true,
+        trigger: ".skill",
+        start: "40% 95%",
+        end: "80% 50% ",
+        // markers: true,
+        scrub: true,
+      },
+      duration: 1,
+      // opacity: 0,
+      // delay: 0.3,
+      scrub: "true",
+      translateY: "120",
+      // rotate : -30,
+      stagger: 1,
       ease: "power1.Out",
     });
   });
   return (
     <div className="mx-[5vw] md:mx-[10vw] my-[1vw] md:flex flex-col relative overflow-hidden">
       <div className="flex flex-col ">
-        <div className="mb-10 tool h-[11vw] overflow-hidden flex bf ">
-          <div className="z-2 overflow-hidden">
-            <span className="text-[10vw] inline-block y tool1 z-1">S</span>
-          </div>
-          <div className="z-2 overflow-hidden">
-            <span className="text-[10vw] inline-block y tool2 ">k</span>
-          </div>
-          <div className="z-2 overflow-hidden">
-            <span className="text-[10vw] inline-block y tool3 ">i</span>
-          </div>
-          <div className="z-2 overflow-hidden">
-            <span className="text-[10vw] inline-block y tool4 ">l</span>
-          </div>
-          <div className="z-2 overflow-hidden">
-            <span className="text-[10vw] inline-block y tool5 ">l</span>
-          </div>
-          <div className="z-2 overflow-hidden">
-            <span className="text-[10vw] inline-block y tool5 ">s</span>
-          </div>
+        <div className="mb-10 h-[11vw] flex bf">
+          {letters.map((letter, index) => (
+            <span key={index} className="text-[10vw] overflow-hidden inline-block y">
+              <span className="tool inline-block">{letter}</span>
+            </span>
+          ))}
         </div>
       </div>
-      <div className="my-4 md:flex md:gap-8 flex gap-5  flex-col ">
-        {/* <div className="text-2xl md:text-[3vw] mb-2">Javascript </div> */}
-        <Hover front=' React | JavaScript | HTML | CSS | Tailwind CSS | Styled Components'>FrontEnd </Hover>
-        <Hover front='Node.js | Express.js | MongoDB | MySQL | PostgreSQL'>BackEnd</Hover>
-        <Hover front='Docker | Kubernetes | CI/CD | AWS '>DevOps</Hover>
-        <Hover front='Git | GitHub'> Version Control </Hover>
-        <Hover front='Figma | Canva '>UI/UX</Hover>
-
-
+      <div className="my-4 md:flex md:gap-8 flex gap-5  flex-col  ">
+        {Object.keys(skills).map((key, index) => (
+          <div key={index} className="container overflow-hidden">
+            <div className="skill overflow-hidden">
+              <Hover front={skills[key].front}>{skills[key].title}</Hover>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

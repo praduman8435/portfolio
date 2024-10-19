@@ -3,7 +3,11 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AnimatedText from "./AnimatedText";
+
 gsap.registerPlugin(ScrollTrigger);
+
+const letters = ['I', 'n', 't', 'r', 'o'];
+
 const Intro = () => {
   useGSAP(() => {
     const t1 = gsap.timeline({
@@ -17,7 +21,7 @@ const Intro = () => {
         // markers: true,
       },
     });
-    t1.from([".about1, .about2, .about3, .about4, .about5"], {
+    t1.from([".about"], {
       duration: 0.3,
       //   opacity: 0,
       //   delay: 0.4,
@@ -36,11 +40,10 @@ const Intro = () => {
       >
         <div className="flex flex-col ">
           <div className="mb-10 about h-[11vw] w-[18 overflow-hidden flex bf ">
-            <span className="text-[10vw] inline-block y about1 ">I</span>
-            <span className="text-[10vw] inline-block y about2 ">n</span>
-            <span className="text-[10vw] inline-block y about3 ">t</span>
-            <span className="text-[10vw] inline-block y about4 ">r</span>
-            <span className="text-[10vw] inline-block y about5 ">o</span>
+            {letters.map((letter, index) => (
+              <span key={index} className="text-[10vw] inline-block y about ">{letter}</span>
+            ))}
+            
           </div>
         </div>
 
