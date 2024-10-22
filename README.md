@@ -7,7 +7,7 @@ This website is my first attempt at creating a sleek, modern portfolio with smoo
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React.js, Tailwind CSS
+- **Frontend**: React.js, Tailwind CSS, Sass
 - **Animation**: GSAP (GreenSock)
 - **Bundler**: Vite
 - **Deployment**: Deployed on Vercel
@@ -37,7 +37,7 @@ If you want to run this project locally, follow these steps:
    
 5. Open your browser and go to:
    ```bash
-   http://localhost:3000
+   http://localhost:5173
    ```
 
 And that's it! You can now view and edit the website locally on your machine.
