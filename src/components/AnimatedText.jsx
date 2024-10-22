@@ -42,7 +42,7 @@ const AnimatedText = ({ text, id }) => {
 
       tl.to(allMasks, {
         width: "0%",
-        height: "0%",
+        // height: "0%",
         duration: 2,
         stagger: 0.5,
         display: "inline",

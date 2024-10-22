@@ -3,9 +3,13 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AnimatedText from "./AnimatedText";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const letters = ['I', 'n', 't', 'r', 'o'];
+
 const Intro = () => {
   useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
     const t1 = gsap.timeline({
       scrollTrigger: {
         toggleActions: "play none none none",
@@ -17,7 +21,7 @@ const Intro = () => {
         // markers: true,
       },
     });
-    t1.from([".about1, .about2, .about3, .about4, .about5"], {
+    t1.from([".about"], {
       duration: 0.3,
       //   opacity: 0,
       //   delay: 0.4,
@@ -36,11 +40,10 @@ const Intro = () => {
       >
         <div className="flex flex-col ">
           <div className="mb-10 about h-[11vw] w-[18 overflow-hidden flex bf ">
-            <span className="text-[10vw] inline-block y about1 ">I</span>
-            <span className="text-[10vw] inline-block y about2 ">n</span>
-            <span className="text-[10vw] inline-block y about3 ">t</span>
-            <span className="text-[10vw] inline-block y about4 ">r</span>
-            <span className="text-[10vw] inline-block y about5 ">o</span>
+            {letters.map((letter, index) => (
+              <span key={index} className="text-[10vw] inline-block y about ">{letter}</span>
+            ))}
+            
           </div>
         </div>
 
@@ -56,12 +59,12 @@ const Intro = () => {
         </div>
         <div className="leading-5 tracking-wide flex my-10 overflow-hidden ">
           <p className="w-1/2"></p>
-          <p className="md:w-1/2 w-100 text-right md:text-xl">
+          <div className="md:w-1/2 w-100 text-right md:text-xl">
             <AnimatedText
               text={`Whether I’m designing intuitive interfaces or crafting robust server-side logic, I thrive on challenges that push my creativity and technical skills. Explore my projects below to see how I can help bring your vision to life!`}
               id={1}
             />
-          </p>
+          </div>
         </div>
       </div>
     </>

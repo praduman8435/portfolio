@@ -2,9 +2,9 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 function Loader() {
   useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
     const t1 = gsap.timeline();
     t1.to("#layout", {
       duration: 0.1,
@@ -30,7 +30,7 @@ function Loader() {
       //   // height: 0,
       //   // y: "-100%",
       //   // opacity: 0,
-      //   ease: "power1.inOut", why this is here? 
+      //   ease: "power1.inOut", why this is here?
       // })
       .to("#intro-slider", {
         duration: 0.5,
@@ -40,6 +40,12 @@ function Loader() {
         duration: 0.1,
         css: { height: "100%", overflowY: "auto" },
         ease: "power3.inOut",
+      })
+      .from(["#home", ".strip", ".nav"], {
+        duration: 0.3,
+        opacity: 0,
+        scale: 0.9,
+        ease: "power1.inOut",
       })
       .to(".strip", {
         scrollTrigger: {
