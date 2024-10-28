@@ -2,59 +2,39 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React from "react";
+import Hover2 from "./Hover2";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
   useGSAP(() => {
-    const timeline = gsap.timeline({
-      defaults: {
-        ease: "none",
-      },
+    const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "#container",
-        pin: true,
-        start: "top",
-        end: "bottom",
+        trigger: ".project",
+        start: "top 80%",
+        end: "bottom 80%",
         scrub: 1,
         // markers: true,
       },
+    })
+      tl.from([".overlay"], {
+        // y: 200,
+        opacity: 100,
+        width: "100%",
+      duration: 1,
+      stagger: 0.2,
     });
-
-    // const circles = gsap.utils.toArray("section.circle");
-    // circles.forEach((circle) => {
-    //   timeline.from(circle, {
-    //     clipPath: "circle(0% at 50% 50%)",
-    //     stagger: 1,
-    //   });
-    // });
-
-    timeline.from("section", {
-      clipPath: "circle(0% at 50% 50%)",
-      stagger: 1,
-    });
-  });
-
+  })
   return (
-    <div className="w-screen relative " id="container">
-      <div className="flex justify-center items-center h-screen">
-        <h1 className="text-[10vw] y ">Projects</h1>
-        <section className="">
-          <div className="h-screen w-full bg-[#eee] md:text-5xl p-10">
-             UNDER CONSTRUCTION 🔨🔨🔨🔨 visit <a href="https://www.github.com/thexro" className="underline y">Github</a> for projects  
-          </div>
+    <div className="md:flex flex-col relative overflow-hidden h-scren mx-[5vw] md:mx-[10vw] my-[1vw] pb-28">
+        <h1 className="text-[10vw] y project relative">Projects <span className="overlay absolute opacity-90 top-0 left-0 bg-[#111] w-0 h-full z-10 "></span></h1>
+      <section className="w-full bg-white">
+            <Hover2 number="/1." to='https://www.github.com'> Project 1 </Hover2>
+            <Hover2 number="/2." to='https://www.github.com'> Project 2 </Hover2>
+            <Hover2 number="/3." to='https://www.github.com'> Project 3 </Hover2>
+            <Hover2 number="/4." to='https://www.github.com'> Project 4 </Hover2>
+            <Hover2 number="/5." to='https://www.github.com'> Project 5 </Hover2>
         </section>
-        {/* <section className="">
-          <div className="h-screen w-full bg-zinc-500 text-9xl
-          ">
-            Prject 2
-          </div>
-        </section>
-        <section className="">
-          <div className="h-screen w-full bg-violet-500 text-yellow-400 text-9xl">Project 3 </div>
-          
-        </section> */}
-      </div>
     </div>
   );
 }

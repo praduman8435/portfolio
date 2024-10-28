@@ -1,16 +1,38 @@
-import React from "react";
-import Hover2 from "./Hover2";
+import React, { useEffect, useRef } from "react";
+import LocomotiveScroll from 'locomotive-scroll';
+// import 'locomotive-scroll/src/locomotive-scroll.scss'; // Import styles
+
 function Social() {
+  const scrollRef = useRef(null); // Using useRef instead of createRef
+
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true,
+    });
+
+    // Cleanup function to kill the scroll instance
+    return () => {
+      if (scroll) {
+        scroll.destroy();
+      }
+    };
+  }, []); // Empty dependency array to run only on mount
+
   return (
-    <div className="w-screen bg-[#dcddd9d3] h-[80vh] px-[5vw] md:px-[10vw] md:pt-20 py-[18vw] relative rounded-t-[50px]">
-      {/* <h1 className="text-[10vw]">Contact</h1> */}
-      <div className="h-[60vh] md:pt-6 border-2 rounded-3xl bg-[#ddd]">
-        <h1 className="md:text-[3vw] p-6  text-3xl text-black">Socials</h1>
-        <div>
-          <Hover2 number='/1.'> Github </Hover2>
-          <Hover2 number='/2.'> LinkedIn </Hover2>
-          <Hover2 number='/3.'> Twitter </Hover2>
-        </div>
+    <div className="pp h-[150vh] text-center">
+      <div className="scroll h-[200vh]" ref={scrollRef}>
+        <h1 data-scroll data-scroll-speed="9" data-scroll-position="top">
+          Locomotive Scroll in React
+        </h1>
+        <h2
+          data-scroll
+          data-scroll-speed="9"
+          data-scroll-position="top"
+          data-scroll-direction="horizontal"
+        >
+          Ima go sideways
+        </h2>
       </div>
     </div>
   );

@@ -20,13 +20,15 @@ function Hero() {
       y: 200,
       duration: .5,
     });
-    if (window.matchMedia("(min-width: 768px)").matches) { // Change 768px to your breakpoint
+    if (window.matchMedia("(min-width: 768px)").matches) {
       tl.to([".side"], {
         x: 150, // Translate along x-axis
         duration: .5,
+        opacity: 0,
       });
     } else {
       tl.to([".side"], {
+        opacity: 0,
         y: 50, // Translate along y-axis
         duration: 1,
       });
@@ -68,12 +70,12 @@ function Hero() {
 
   return (
     <div className="" id="home">
-      <div className="mx-[5vw] md:mx-[10vw] md:my-36 my-[18vw] md:flex relative">
+      <div className="mx-[5vw] md:mx-[10vw] md:my-36 my-[18vw] md:flex relative overflow-hidden">
         <div className="grow">
           <div className=" font-black text-6xl md:text-[8vw] overflow-hidden">
             <div className="name">Ravi Yadav</div>
           </div>
-          <p className="md:text-xl opacity-50 w-[80%] md:w-[70%] lg:w-[50%] overflow-hidden ">
+          <div className="md:text-xl opacity-50 w-[80%] md:w-[70%] lg:w-[50%] overflow-hidden ">
             <div className="underdog">
               <div className="inline">
                 Full Stack Web Developer & UI designer
@@ -82,12 +84,12 @@ function Hero() {
                 | Crafting Seamless Digital Experiences
               </div>
             </div>
-          </p>
+          </div>
           {/* <p className="text-xl my-12 opacity-50 w-[50]">
             Crafting Digital Experiences with Precision and Passion.
           </p> */}
         </div>
-        <div className="text-sm mt-20 md:mt-0 overflow-hidden">
+        <div className="text-sm mt-20 md:mt-0 ">
           <div className="flex md:inline-block gap-[15vw] side">
             <p className="md:text-right md:w-44">Based in India</p>
             <p className="md:mt-40 md:text-right md:w-44">

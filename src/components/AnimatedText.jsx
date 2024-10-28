@@ -42,11 +42,24 @@ const AnimatedText = ({ text, id }) => {
 
       tl.to(allMasks, {
         width: "0%",
+        opacity: 0,
         // height: "0%",
         duration: 2,
-        stagger: 0.5,
+        stagger: .5,
+        delay: .5,
+        ease: "power2.inOut",
         display: "inline",
       });
+
+      // allMasks.forEach((mask, index) => {
+      //   tl.to(mask, {
+      //     width: "0%",
+      //     duration: 1,
+      //     display: "inline",
+      //     delay : 0.5,
+      //     // ease: "power2.in",
+      //   }, index); // This offsets each animation by the duration time
+      // });
     };
 
     runSplit(); // Run the split and animation functions
