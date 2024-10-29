@@ -30,6 +30,8 @@ function Layout() {
       <Tools />
       <String />
       <Projects />
+      <String />
+
       <Social />
       {/* <Education/> */}
     </div>
