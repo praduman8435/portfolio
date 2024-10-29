@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 @import "/node_modules/mouse-follower/src/scss/index.scss";
-@import 'node_modules/locomotive-scroll/dist/locomotive-scroll';
+@import "node_modules/locomotive-scroll/dist/locomotive-scroll";
 
 html[data-scroll-orientation="horizontal"] {
   body {
-      width: fit-content;
+    width: fit-content;
   }
   [data-scroll-container] {
-      display: flex;
+    display: flex;
   }
 }
 * {
@@ -21,15 +21,14 @@ html[data-scroll-orientation="horizontal"] {
 @font-face {
   font-family: font1;
   src: url("./assets/fonts/TT\ Firs\ Neue\ Trial\ Medium.ttf");
-  
 }
 body {
   background-color: #111;
   color: rgb(255, 255, 255);
 }
- .sG{
+.sG {
   font-family: "Space Grotesk";
- }
+}
 
 // .mf-cursor {
 //   mix-blend-mode: difference;

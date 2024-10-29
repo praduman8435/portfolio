@@ -7,7 +7,7 @@ import AnimatedTextV2 from "./AnimatedTextV2";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const letters = ['I', 'n', 't', 'r', 'o'];
+const letters = ["I", "n", "t", "r", "o"];
 
 const Intro = () => {
   useGSAP(() => {
@@ -35,16 +35,18 @@ const Intro = () => {
 
   return (
     <>
-      <div
-        className="mx-[5vw] md:mx-[10vw] md:mt-[5v md:flex md:flex-col gap-10"
-        
-      >
-        <div className="flex flex-col  " >
+      <div className="mx-[5vw] md:mx-[10vw] md:mt-[5v md:flex md:flex-col gap-10">
+        <div className="flex flex-col  ">
           <div className="mb-5 h-[11vw] w-[18] overflow-hidden flex  ">
             {letters.map((letter, index) => (
-              <span key={index} id="about" className="text-[10vw] inline-block y about ">{letter}</span>
+              <span
+                key={index}
+                id="about"
+                className="text-[10vw] inline-block y about "
+              >
+                {letter}
+              </span>
             ))}
-            
           </div>
         </div>
 

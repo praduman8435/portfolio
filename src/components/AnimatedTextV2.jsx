@@ -12,9 +12,9 @@ function AnimatedTextV2({ text, id }) {
     // Split the text into words and then into characters
     const words = text.split(" ").map((word, index) => {
       return (
-        <span className="word" key={word+index}>
+        <span className="word" key={word + index}>
           {word.split("").map((char, index) => (
-            <span className="char" key={index*Math.random()}>
+            <span className="char" key={index * Math.random()}>
               {char}
             </span>
           ))}

@@ -18,12 +18,12 @@ function Hero() {
     });
     tl.to([".name", ".underdog"], {
       y: 200,
-      duration: .5,
+      duration: 0.5,
     });
     if (window.matchMedia("(min-width: 768px)").matches) {
       tl.to([".side"], {
         x: 150, // Translate along x-axis
-        duration: .5,
+        duration: 0.5,
         opacity: 0,
       });
     } else {

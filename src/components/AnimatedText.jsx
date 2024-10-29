@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import SplitType from 'split-type';
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import SplitType from "split-type";
 
 // Ensure GSAP ScrollTrigger is registered
 gsap.registerPlugin(ScrollTrigger);
@@ -13,13 +13,13 @@ const AnimatedText = ({ text, id }) => {
     // Function to split text and create animation
     const runSplit = () => {
       const typeSplit = new SplitType(containerRef.current, {
-        types: "lines, words"
+        types: "lines, words",
       });
 
       // Add line-mask to each word
-      containerRef.current.querySelectorAll(".word").forEach(word => {
-        const mask = document.createElement('div');
-        mask.className = 'line-mask';
+      containerRef.current.querySelectorAll(".word").forEach((word) => {
+        const mask = document.createElement("div");
+        mask.className = "line-mask";
         word.appendChild(mask);
       });
 
@@ -28,7 +28,9 @@ const AnimatedText = ({ text, id }) => {
 
     // Function to create the GSAP animation
     const createAnimation = () => {
-      const allMasks = Array.from(containerRef.current.querySelectorAll(".line-mask"));
+      const allMasks = Array.from(
+        containerRef.current.querySelectorAll(".line-mask")
+      );
 
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -36,8 +38,8 @@ const AnimatedText = ({ text, id }) => {
           start: "top 80%",
           end: "150% 80%",
           scrub: 1,
-          // markers: true, 
-        }
+          // markers: true,
+        },
       });
 
       tl.to(allMasks, {
@@ -45,8 +47,8 @@ const AnimatedText = ({ text, id }) => {
         opacity: 0,
         // height: "0%",
         duration: 2,
-        stagger: .5,
-        delay: .5,
+        stagger: 0.5,
+        delay: 0.5,
         ease: "power2.inOut",
         display: "inline",
       });
