@@ -65,7 +65,7 @@ function Projects() {
     >
       <h1 className="text-[10vw] project relative y">
         Projects
-        <span className="overlay absolute opacity-90 top-0 left-0 bg-[#111] w-0 h-full z-10"></span>
+        <span className="overlay absolute opacity-90 top-0 left-0 bg-[#000] w-0 h-full z-10"></span>
       </h1>
 
       <section className="w-full mt-4">

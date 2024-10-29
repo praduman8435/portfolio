@@ -7,7 +7,7 @@ function Hover2({ children, number, to, info }) {
 
   return (
     <div onClick={handleClick} className="cursor-pointer">
-      <div className="group relative bg-[#111] transition-all duration-500 h-20 overflow-hidden">
+      <div className="group relative  transition-all duration-500 h-20 overflow-hidden">
         <div className="flex gap-2 justify-between items-center h-full md:px-8  duration-500">
           <div className="">
             <div className="text-2xl md:text-4xl transition-transform duration-300 z-10 group-hover:translate-x-10 md:group-hover:opacity-0 group-hover:text-black">
@@ -28,7 +28,7 @@ function Hover2({ children, number, to, info }) {
         </div>
 
         {/* Info Section for Hover */}
-        <div className="hidden absolute inset-0 text-xl bg-[#111] text-white w-[80%]  md:flex items-center ml-4  opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div className="hidden absolute inset-0 text-xl text-white w-[80%]  md:flex items-center ml-4  opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <p className="px-4">{info}</p>
         </div>
       </div>

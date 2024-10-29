@@ -18,7 +18,7 @@ function Social() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-around items-end">
+        <div className="flex flex-col justify-between md:py-6 items-end">
           <a
             href="https://github.com/thexro"
             target="_blank"
