@@ -28,7 +28,7 @@ function Hover2({ children, number, to, info }) {
         </div>
 
         {/* Info Section for Hover */}
-        <div className="hidden absolute inset-0 text-xl bg-[#111] text-white text-center md:flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div className="hidden absolute inset-0 text-xl bg-[#111] text-white w-[80%]  md:flex items-center ml-4  opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <p className="px-4">{info}</p>
         </div>
       </div>

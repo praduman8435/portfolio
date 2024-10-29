@@ -89,3 +89,8 @@ a {
   background-color: #111;
   opacity: 0.9;
 }
+.stroke {
+  color: black;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0); 
+  -webkit-text-stroke: 1px rgb(105, 191, 30);
+}
