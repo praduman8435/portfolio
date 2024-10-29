@@ -28,7 +28,10 @@ function Layout() {
       <Intro />
       <String />
       <Tools />
+      <String />
       <Projects />
+      <String />
+
       <Social />
       {/* <Education/> */}
     </div>

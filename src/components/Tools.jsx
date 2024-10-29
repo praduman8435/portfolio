@@ -6,21 +6,22 @@ import { useGSAP } from "@gsap/react";
 
 import Hover from "./Hover";
 
-const letters = ['T', 'o', 'o', 'l', 's'];
+const letters = ["T", "o", "o", "l", "s"];
 
 const skills = {
   frontEnd: {
-    front: "React | JavaScript | HTML | CSS | Tailwind CSS | Styled Components",
+    front:
+      "React | Redux | JavaScript | HTML | CSS | Tailwind CSS | Styled Components | Sass ",
     title: "FrontEnd",
   },
   backEnd: {
-    front: "Node.js | Express.js | MongoDB | MySQL | PostgreSQL",
+    front: "Node.js | Express.js | MongoDB | MySQL ",
     title: "BackEnd",
   },
-  devOps: {
-    front: "Docker | Kubernetes | CI/CD | AWS",
-    title: "DevOps",
-  },
+  // devOps: {
+  //   front: "Docker | Kubernetes | CI/CD | AWS",
+  //   title: "DevOps",
+  // },
   versionControl: {
     front: "Git | GitHub",
     title: "Version Control",
@@ -76,7 +77,10 @@ function Tools() {
       <div className="flex flex-col ">
         <div className="mb-10 h-[11vw] flex bf">
           {letters.map((letter, index) => (
-            <span key={index} className="text-[10vw] overflow-hidden inline-block y">
+            <span
+              key={index}
+              className="text-[10vw] overflow-hidden inline-block y"
+            >
               <span className="tool inline-block">{letter}</span>
             </span>
           ))}

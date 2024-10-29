@@ -1,16 +1,62 @@
-import React from "react";
-import Hover2 from "./Hover2";
+import React, { useEffect, useRef } from "react";
+
 function Social() {
+  const handleClick = () => {
+    window.open("mailto:r.therxro@gmail.com");
+  };
   return (
-    <div className="w-screen bg-[#dcddd9d3] h-[80vh] px-[5vw] md:px-[10vw] md:pt-20 py-[18vw] relative rounded-t-[50px]">
-      {/* <h1 className="text-[10vw]">Contact</h1> */}
-      <div className="h-[60vh] md:pt-6 border-2 rounded-3xl bg-[#ddd]">
-        <h1 className="md:text-[3vw] p-6  text-3xl text-black">Socials</h1>
-        <div>
-          <Hover2 number='/1.'> Github </Hover2>
-          <Hover2 number='/2.'> LinkedIn </Hover2>
-          <Hover2 number='/3.'> Twitter </Hover2>
+    <div className="mx-[5vw] md:mx-[10vw]">
+      <div className="flex justify-between">
+        <div className="flex flex-col ">
+          <div className="md:text-[6vw] text-3xl">LET'S CONNECT</div>
+          <div className="">
+            <div
+              onClick={handleClick}
+              className="text-5xl stroke w-fit md:text-[10vw] y cursor-pointer md:mt-4 font-black relative  "
+            >
+              REACH OUT
+            </div>
+          </div>
         </div>
+        <div className="flex flex-col justify-between md:py-6 items-end">
+          <a
+            href="https://github.com/thexro"
+            target="_blank"
+            className="group transition duration-300"
+          >
+            Github
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ravi-yadav-747226251/"
+            target="_blank"
+            className="group transition duration-300"
+          >
+            Linkedin
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+          </a>
+          <a
+            href="https://x.com/_ravi_y"
+            target="_blank"
+            className="group transition duration-300"
+          >
+            Twitter
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+          </a>
+          <a
+            href="https://www.instagram.com/_ravi_yada_v"
+            target="_blank"
+            className="group transition duration-300"
+          >
+            Instagram
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+          </a>
+        </div>
+      </div>
+      <div className="flex flex-row justify-between items-center  my-8">
+      <div className="">© 2024 TheXro </div>
+        <div className="">Made with 🖤 </div>
+        <div className="">India </div>
       </div>
     </div>
   );

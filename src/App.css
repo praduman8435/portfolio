@@ -36,19 +36,25 @@
   bottom: 0;
   height: 100%;
 }
-.btn-43:active::after{
+.btn-43:active::after {
   opacity: 0.3;
 }
-a{
+a {
   cursor: pointer;
 }
-.me{
+.me {
   z-index: -4;
-  background: url('./components/me.png') no-repeat center center/cover;
+  background: url("./components/me.png") no-repeat center center/cover;
 }
 
-.y{
-  color: #c3ff00
+.y {
+  color: #c3ff00;
+}
+
+.char {
+  display: inline-block;
+  position: relative;
+  width: auto;
 }
 .word {
   position: relative;
@@ -65,9 +71,26 @@ a{
   width: 100%;
   z-index: 2;
 }
+.word {
+  display: inline-block; /* Keeps words on the same line */
+}
 
-section {
-  clip-path: circle(100% at 50% 50%);
-  width: 100%;
+.char {
+  display: inline-block; /* Each character can be animated */
+  position: relative; /* Necessary for positioning the mask */
+}
+
+.letter-mask {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.9;
+}
+.stroke {
+  color: black;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0); 
+  -webkit-text-stroke: 1.5px rgb(105, 191, 30);
 }

@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ReactLenis, useLenis } from "lenis/react";
 import Layout from "./components/Layout";
 import Hover from "./components/Hover";
+import AnimatedTextV2 from "./components/AnimatedTextV2";
 function App() {
   const lenis = useLenis(({ scroll }) => {
     duration: 2.5;
