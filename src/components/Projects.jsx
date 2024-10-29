@@ -14,7 +14,7 @@ function Projects() {
         start: "top 80%",
         end: "bottom 50%",
         scrub: 1,
-        markers: true,
+        // markers: true,
       },
     });
     tl.from(".overlay", {
