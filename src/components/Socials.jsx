@@ -53,7 +53,11 @@ function Social() {
           </a>
         </div>
       </div>
-      <div className="text-center mt-8">{/* Made with ❤️ in India */}</div>
+      <div className="flex flex-row justify-between items-center  my-8">
+      <div className="">© 2024 TheXro </div>
+        <div className="">Made with 🖤 </div>
+        <div className="">India </div>
+      </div>
     </div>
   );
 }
