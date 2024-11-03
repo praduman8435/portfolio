@@ -10,12 +10,12 @@ function Hover2({ children, number, to, info }) {
       <div className="group relative  transition-all duration-500 h-20 overflow-hidden">
         <div className="flex gap-2 justify-between items-center h-full md:px-8  duration-500">
           <div className="">
-            <div className="text-2xl md:text-4xl transition-transform duration-300 z-10 group-hover:translate-x-10 md:group-hover:opacity-0 group-hover:text-black">
+            <div className="text-2xl md:text-4xl transition-transform duration-300 z-10 md:group-hover:translate-x-10 md:group-hover:opacity-0 md:group-hover:text-black">
               {number}.<span className="mx-4">{children}</span>
             </div>
             <div className="md:hidden text-xs leading-tighter">{info}</div>
           </div>
-          <div className="icon transition-transform duration-200 z-10 group-hover:-translate-x-10 group-hover:-rotate-45 rounded-full flex justify-center items-center  group-hover:border-none group-hover:bg-transparent">
+          <div className="icon transition-transform duration-200 z-10 md:group-hover:-translate-x-10 md:group-hover:-rotate-45 rounded-full flex justify-center items-center  group-hover:border-none group-hover:bg-transparent">
             <div className="w-5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path
