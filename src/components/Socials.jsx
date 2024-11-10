@@ -1,9 +1,14 @@
+import { gsap } from 'gsap';
+import { useGSAP } from "@gsap/react";
 import React, { useEffect, useRef } from "react";
 
 function Social() {
   const handleClick = () => {
     window.open("mailto:r.therxro@gmail.com");
   };
+
+
+
   return (
     <div className="mx-[5vw] md:mx-[10vw]">
       <div className="flex justify-between">
@@ -53,8 +58,8 @@ function Social() {
           </a>
         </div>
       </div>
-      <div className="flex flex-row justify-between items-center  my-8">
-      <div className="">© 2024 TheXro </div>
+      <div className="flex flex-row justify-between items-center  my-8 text-xs md:text-sm ">
+      <div className="">©TheXro </div>
         <div className="">Made with 🖤 </div>
         <div className="">India </div>
       </div>
