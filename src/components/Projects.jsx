@@ -35,7 +35,7 @@ function Projects() {
     {
       number: "01",
       title: "The Wild Oasis",
-      to: "https://github.com/TheXro/cabin-booking-app/",
+      to: "https://github.com/TheXro/Wild-Oasis",
       info: "A cabin booking app made in React with Redux Query, React Router, and styled components, using Supabase as backend.",
     },
     {
