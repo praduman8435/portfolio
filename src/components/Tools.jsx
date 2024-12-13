@@ -15,13 +15,13 @@ const skills = {
     title: "FrontEnd",
   },
   backEnd: {
-    front: "Node.js | Express.js | MongoDB | MySQL ",
+    front: "Node.js | Express.js | MongoDB | MySQL | Jest",
     title: "BackEnd",
   },
-  // devOps: {
-  //   front: "Docker | Kubernetes | CI/CD | AWS",
-  //   title: "DevOps",
-  // },
+  devOps: {
+    front: "Docker | Kubernetes | CI/CD | AWS",
+    title: "DevOps",
+  },
   versionControl: {
     front: "Git | GitHub",
     title: "Version Control",

@@ -41,7 +41,7 @@ function Projects() {
     {
       number: "02",
       title: "Money Minded",
-      to: "https://github.com/TheXro/mM_server.git",
+      to: "https://moneyminded.vercel.app/",
       info: "A full-stack money and task manager app built with React, Node, Express, and MongoDB.",
     },
     {
