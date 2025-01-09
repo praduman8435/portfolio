@@ -20,7 +20,7 @@ function Layout() {
         <Strips />
         <div className="pt-[20vw] md:py-0 relative">
           <String />{" "}
-          <div className="absolute md:hidden top-[55%] text-center w-full capitalize text-[4vw]">
+          <div className="absolute md:hidden top-[55%] text-center w-full capitalize text-[3vw]">
             results that exceeds expectations
           </div>
         </div>

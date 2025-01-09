@@ -75,13 +75,13 @@ function Tools() {
   return (
     <div className="mx-[5vw] md:mx-[10vw] my-[1vw] md:flex flex-col relative overflow-hidden">
       <div className="flex flex-col ">
-        <div className="mb-10 h-[11vw] flex bf">
+        <div className="mb-10 h-[12vw] flex bf font-bold ">
           {letters.map((letter, index) => (
             <span
               key={index}
               className="text-[10vw] overflow-hidden inline-block y"
             >
-              <span className="tool inline-block">{letter}</span>
+              <span className="tool inline-block ">{letter}</span>
             </span>
           ))}
         </div>
