@@ -11,15 +11,15 @@ const letters = ["T", "o", "o", "l", "s"];
 const skills = {
   frontEnd: {
     front:
-      "React | Redux | JavaScript | HTML | CSS | Tailwind CSS | Styled Components | Sass ",
+      "React.js| Next.js | Redux | JavaScript | HTML | CSS | Tailwind CSS | Styled Components | Sass ",
     title: "FrontEnd",
   },
   backEnd: {
-    front: "Node.js | Express.js | MongoDB | MySQL | Jest",
+    front: "Node.js | Express.js | MongoDB | MySQL | Jest ",
     title: "BackEnd",
   },
   devOps: {
-    front: "Docker | Kubernetes | CI/CD | AWS",
+    front: "Docker | Kubernetes | AWS",
     title: "DevOps",
   },
   versionControl: {
