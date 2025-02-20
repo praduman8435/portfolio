@@ -56,6 +56,24 @@ function Projects() {
       to: "https://github.com/TheXro/chatApp",
       info: "A chat web app developed with socket.io.",
     },
+    {
+      number: "05",
+      title: "Portfolio",
+      to: "https://github.com/TheXro/RaviYadav",
+      info: "My portfolio website built with React, Tailwind CSS and GSAP.",
+    },
+    {
+      number: "06",
+      title: "XoFlix",
+      to: "https://github.com/TheXro/xoflix",
+      info: "A movie and TV show app built with React, Redux Toolkit, and styled components.",
+    },
+    {
+      number: "07",
+      title: "Amazon Price Tracker",
+      to: "https://github.com/TheXro/AmazonPriceTracker",
+      info: "A web scraper that tracks prices of products on Amazon.",
+    }
   ];
 
   return (
