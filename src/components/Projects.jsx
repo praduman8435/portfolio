@@ -68,12 +68,12 @@ function Projects() {
       to: "https://github.com/TheXro/xoflix",
       info: "A movie and TV show app built with React, Redux Toolkit, and styled components.",
     },
-    {
-      number: "07",
-      title: "Amazon Price Tracker",
-      to: "https://github.com/TheXro/AmazonPriceTracker",
-      info: "A web scraper that tracks prices of products on Amazon.",
-    }
+    // {
+    //   number: "07",
+    //   title: "Amazon Price Tracker",
+    //   to: "https://github.com/TheXro/AmazonPriceTracker",
+    //   info: "A web scraper that tracks prices of products on Amazon.",
+    // }
   ];
 
   return (
