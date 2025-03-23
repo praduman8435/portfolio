@@ -91,6 +91,12 @@ a {
 }
 .stroke {
   color: black;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0); 
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
   -webkit-text-stroke: 1.5px rgb(105, 191, 30);
+}
+.stroke:hover {
+  color: #fff;
+  -webkit-text-fill-color: #c3ff00;
+  -webkit-text-stroke: 1.5px rgb(244, 255, 234);
+  transition: all 0.3s ease;
 }
