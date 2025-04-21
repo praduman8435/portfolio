@@ -53,7 +53,7 @@ const Intro = () => {
         <div className="flex items-center para md:flex-row  ">
           <div className="text-2xl md:text-[3vw] leading-none para  ">
             <AnimatedTextV2
-              text={`With a blend of technical expertise and design sensibility, I bring a unique approach to building and designing web applications that not only function flawlessly but also captivate users.`}
+              text={`Transforming infrastructure into intelligent workflows, I build DevOps solutions that do more than support applications—they elevate the entire development experience.`}
               id={3}
             />
           </div>
@@ -62,7 +62,7 @@ const Intro = () => {
           <p className="w-1/2"></p>
           <div className="md:w-1/2 w-100 text-right md:text-xl font-medium">
             <AnimatedTextV2
-              text={`Whether I’m designing intuitive interfaces or crafting robust server-side logic, I thrive on challenges that push my creativity and technical skills. Explore my projects below to see how I can help bring your vision to life!`}
+              text={`Whether I’m automating infrastructure, securing CI/CD pipelines, or optimizing cloud deployments, I thrive on solving complex challenges with scalable solutions. Explore my projects below to see how I bring efficiency, reliability, and innovation to every stage of the DevOps lifecycle!`}
               id={1}
             />
           </div>

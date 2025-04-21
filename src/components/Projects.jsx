@@ -34,46 +34,34 @@ function Projects() {
   const projects = [
     {
       number: "01",
-      title: "The Wild Oasis",
-      to: "https://github.com/TheXro/Wild-Oasis",
-      info: "A cabin booking app made in React with Redux Query, React Router, and styled components, using Supabase as backend.",
+      title: "Capstone-Mega-DevOps-Project",
+      to: "https://github.com/praduman8435/Capstone-Mega-DevOps-Project",
+      info: "Robust DevSecOps mega implementation featuring Nexus, SonarQube, Docker, and Jenkins for CI/CD of a Spring Boot microservice on AWS EKS.",
     },
     {
       number: "02",
-      title: "Money Minded",
-      to: "https://moneyminded.vercel.app/",
-      info: "A full-stack money and task manager app built with React, Node, Express, and MongoDB.",
+      title: "Production-ready-EKS-with-automation",
+      to: "https://github.com/praduman8435/Production-ready-EKS-with-automation",
+      info: "A fully automated, scalable, and cost-optimized AWS EKS cluster using Terraform & Github Actions for seamless CI/CD.",
     },
     {
       number: "03",
-      title: "Fast Pizza",
-      to: "https://github.com/TheXro/fast-pizza",
-      info: "A pizza booking app built with React, Redux Toolkit, and React Router.",
+      title: "DevSecOps-in-Action",
+      to: "https://github.com/praduman8435/DevSecOps-in-Action",
+      info: "The Ultimate DevSecOps Project: Learn how to integrate security, automation, and observability in Kubernetes with AWS, ArgoCD & Prometheus!",
     },
     {
       number: "04",
-      title: "Corn Chan",
-      to: "https://github.com/TheXro/chatApp",
-      info: "A chat web app developed with socket.io.",
+      title: "go-web-app",
+      to: "https://github.com/praduman8435/portfolio",
+      info: "Automated end-to-end DevOps pipeline for a Go web application using Kubernetes, Helm, ArgoCD, and GitHub Actions. Ensures seamless CI/CD with containerized deployments and infrastructure as code.",
     },
     {
       number: "05",
-      title: "Portfolio",
-      to: "https://github.com/TheXro/RaviYadav",
-      info: "My portfolio website built with React, Tailwind CSS and GSAP.",
+      title: "Boardgame",
+      to: "https://github.com/praduman8435/Boardgame",
+      info: "A fully automated corporate-grade CI/CD pipeline with DevSecOps integration. Features Jenkins-based automation, SonarQube & Trivy security scans, Nexus artifact management, Dockerized deployments to Kubernetes, and real-time monitoring with Prometheus & Grafana. Ensuring zero manual intervention, enterprise security, and seamless scalability.",
     },
-    {
-      number: "06",
-      title: "XoFlix",
-      to: "https://github.com/TheXro/xoflix",
-      info: "A movie and TV show app built with React, Redux Toolkit, and styled components.",
-    },
-    // {
-    //   number: "07",
-    //   title: "Amazon Price Tracker",
-    //   to: "https://github.com/TheXro/AmazonPriceTracker",
-    //   info: "A web scraper that tracks prices of products on Amazon.",
-    // }
   ];
 
   return (

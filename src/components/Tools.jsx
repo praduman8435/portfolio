@@ -9,18 +9,18 @@ import Hover from "./Hover";
 const letters = ["T", "o", "o", "l", "s"];
 
 const skills = {
-  frontEnd: {
+  Infrastructure_as_Code : {
     front:
-      "React.js| Next.js | Redux | JavaScript | HTML | CSS | Tailwind CSS | Styled Components | Sass ",
-    title: "FrontEnd",
+      "Terraform | Ansible",
+    title: "Infrastructure as Code & Configuration Management",
   },
-  backEnd: {
-    front: "Node.js | Express.js | MongoDB | MySQL | Jest ",
-    title: "BackEnd",
+  Cloud: {
+    front: "AWS | Azure",
+    title: "Cloud",
   },
-  devOps: {
-    front: "Docker | Kubernetes | AWS",
-    title: "DevOps",
+  Containerization: {
+    front: "Docker",
+    title: "Containerization",
   },
   versionControl: {
     front: "Git | GitHub",

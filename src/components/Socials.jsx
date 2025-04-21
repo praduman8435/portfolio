@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 
 function Social() {
   const handleClick = () => {
-    window.open("mailto:r.therxro@gmail.com");
+    window.open("mailto:r.praduman.cnd@gmail.com");
   };
 
 
@@ -25,7 +25,7 @@ function Social() {
         </div>
         <div className="flex flex-col justify-between md:py-6 items-end">
           <a
-            href="https://github.com/thexro"
+            href="https://github.com/praduman8435"
             target="_blank"
             className="group transition duration-300"
           >
@@ -33,7 +33,7 @@ function Social() {
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
           <a
-            href="https://www.linkedin.com/in/ravi-yadav-747226251/"
+            href="https://www.linkedin.com/in/praduman-prajapati/"
             target="_blank"
             className="group transition duration-300"
           >
@@ -41,7 +41,7 @@ function Social() {
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
           <a
-            href="https://x.com/_ravi_y"
+            href="https://x.com/CndTwtprad"
             target="_blank"
             className="group transition duration-300"
           >
@@ -49,17 +49,17 @@ function Social() {
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
           <a
-            href="https://www.instagram.com/_ravi_yada_v"
+            href="https://itspraduman.hashnode.dev/"
             target="_blank"
             className="group transition duration-300"
           >
-            Instagram
+            Hashnode
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
         </div>
       </div>
       <div className="flex flex-row justify-between items-center  my-8 text-xs md:text-sm ">
-      <div className="">©TheXro </div>
+      <div className="">©praduman </div>
         <div className="">Made with 🖤 </div>
         <div className="">India </div>
       </div>

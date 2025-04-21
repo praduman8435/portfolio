@@ -3,7 +3,7 @@ function Navbar() {
   return (
     <>
       <nav className="mx-[5vw] md:mx-[10vw]  py-16 flex items-center z-[999] nav ">
-        <div className="logo text-3xl grow ">Tx.</div>
+      <div className="logo text-3xl grow" style={{ color: "#5BEB3D" }}>Hey! 👋</div>
         <ul className="gap-12 grow hidden md:flex lg:flex ">
           
           <a href="#about" className="group transition duration-300">
@@ -26,7 +26,7 @@ function Navbar() {
         <div data-cursor-stick="#stick-me">
           <button
             onClick={() => {
-              window.open("mailto:r.thexro@gmail.com");
+              window.open("mailto:r.praduman.cnd@gmail.com");
             }}
             id="stick-me"
             className=" scale-90 md:scale-100 md:block lg:block btn41-43 btn-43"

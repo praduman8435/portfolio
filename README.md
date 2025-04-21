@@ -1,4 +1,4 @@
-# Ravi Yadav - Portfolio
+# Praduman Prajapati - Portfolio
 
 Welcome to the repository for my personal portfolio website! 🎨🚀  
 [Check it out here!](https://thexro.vercel.app/)
@@ -19,12 +19,12 @@ If you want to run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/thexro/RaviYadav.git
+   git clone https://github.com/praduman8435/portfolio.git
    ```
 2. Navigate to the project directory:
 
     ```bash
-    cd RaviYadav
+    cd portfolio
     ```
 3. Install dependencies:
    ```bash

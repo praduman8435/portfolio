@@ -48,7 +48,7 @@ a {
 }
 
 .y {
-  color: #c3ff00;
+  color: #5BEB3D  ;
 }
 
 .char {
@@ -96,7 +96,7 @@ a {
 }
 .stroke:hover {
   color: #fff;
-  -webkit-text-fill-color: #c3ff00;
+  -webkit-text-fill-color: #5BEB3D;
   -webkit-text-stroke: 1.5px rgb(244, 255, 234);
   transition: all 0.3s ease;
 }

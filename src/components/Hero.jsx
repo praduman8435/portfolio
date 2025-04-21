@@ -72,16 +72,16 @@ function Hero() {
     <div className="" id="home">
       <div className="mx-[5vw] md:mx-[10vw] md:my-36 my-[18vw] md:flex relative overflow-hidden">
         <div className="grow">
-          <div className=" font-black text-6xl md:text-[8vw] overflow-hidden">
-            <div className="name">Ravi Yadav</div>
+          <div className=" font-black text-6xl md:text-[7vw] overflow-hidden">
+            <div className="name">Praduman <span style={{ color: "#5BEB3D" }}>Prajapati</span></div>
           </div>
           <div className="md:text-xl opacity-50 w-[80%] md:w-[70%] lg:w-[50%] overflow-hidden ">
             <div className="underdog">
               <div className="inline">
-                Full Stack Web Developer & UI designer
+                DevOps & Cloud Engineer 
               </div>
               <div className="inline">
-                | Crafting Seamless Digital Experiences
+                | Transforming Code into Cloud-Native Realities 
               </div>
             </div>
           </div>
