@@ -10,7 +10,7 @@ function Navbar() {
             About
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
-          <a href="https://blogs.praduman.site/" className="group transition duration-300">
+          <a href="https://blogs.praduman.site/" target="_blank" className="group transition duration-300">
             Blog
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
